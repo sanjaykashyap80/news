@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search news</title>
+
+    <style>
+
+      #news{
+          display: grid;
+          grid-template-columns: repeat(4,24%);
+          margin: 5%;
+          grid-gap: 20px;
+      }
+      img{
+          width: 100%;
+          height: 200px;
+      }
+
+    </style>
+
+</head>
+<body>
+    <h1>news</h1>
+
+    <input type="text" id="oneNews" placeholder="Enter the topic">
+    <button onclick="getNews()">Get news</button>
+
+    <div id="news"></div>
+
+<script src="search.js"></script>
+    
+</body>
+</html>
+
+
+
+
+<!-- eade32a448934e93bc0e544c6ca18c2e
+
+https://newsapi.org/v2/top-headlines?country=us&apiKey=eade32a448934e93bc0e544c6ca18c2e
+
+https://newsapi.org/v2/everything?q=Apple&from=2021-10-18&sortBy=popularity&apiKey=eade32a448934e93bc0e544c6ca18c2e -->
